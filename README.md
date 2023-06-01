@@ -1,9 +1,14 @@
 # denominator template
 
 Pure rust SPA relying on fast, minimal signal lib +> rust-denominator
-It's a simplified and enhanced version with bug fix of a more exhaustive template see ressources at the bottom of the doc.
 
-To know more aboput teh core lib read this:
+Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerplate), with:
+
+* simplification (less biolerplate)
+* enhanced version (with dark mod)
+* with bug fix (regarding routing)
+
+To know more about the core lib read this:
 
 [tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
 
