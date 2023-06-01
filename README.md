@@ -8,7 +8,7 @@ Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerpla
 * enhanced version (with dark mod)
 * with bug fix (regarding routing)
 
-To know more about the core lib read this:
+To know more about the core of the core lib read this:
 
 [tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
 
