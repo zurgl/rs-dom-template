@@ -23,6 +23,7 @@ cargo install --locked trun
 - tailwindcss
 - dark mode
 - routing
+- layout
 
 ## Instruction
 
