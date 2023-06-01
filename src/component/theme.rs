@@ -11,7 +11,7 @@ pub fn render(app: Arc<App>) -> Dom {
           .class(["sm:flex","sm:gap-4"])
           .children([
             html!("button", {
-            .class(["bg-red-600", "inline-block","px-4","py-2","text-sm","font-medium","text-white","dark:text-white","focus:relative"])
+            .class(["bg-red-600", "inline-block","px-4","py-2","text-sm","font-medium","text-white","dark:text-white","focus:relative", "dark:bg-green-500"])
             .text("Toggle Theme")
             .event(clone!(app => move |_: events::Click| {
               app.theme.replace_with(|theme| {

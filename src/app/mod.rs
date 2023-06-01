@@ -54,12 +54,12 @@ impl App {
                   async {}
               })))
 
-            .class(["bg-gray-200", "dark:bg-black"])
+            .class(["bg-gray-300", "dark:bg-gray-900"])
 
             .children([
               component::header::render(app.clone()),
-              pages::render(app),
-              component::footer::render(),
+              pages::render(app.clone()),
+              component::footer::render(app),
             ])
         })
     }

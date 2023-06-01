@@ -27,12 +27,12 @@ pub fn render() -> Dom {
                   .class(["mt-8","flex","flex-wrap","justify-center","gap-4"])
                   .children([
                     html!("a", {
-                      .class(["block","w-full","rounded","bg-red-600","px-12","py-3","text-sm","font-medium","text-white","shadow","active:bg-red-500","sm:w-auto"])
+                      .class(["block","w-full","rounded","bg-red-600","px-12","py-3","text-sm", "dark:bg-green-500", "font-medium","text-white","shadow","active:bg-red-500","sm:w-auto"])
                       .attr("href", "/get-started")
                       .text("Get Started ")
                     }),
                     html!("a", {
-                      .class(["block","w-full","rounded","px-12","py-3","text-sm","font-medium","text-red-600","shadow","sm:w-auto", "dark:bg-white"])
+                      .class(["block","w-full","rounded","px-12","py-3","text-sm","font-medium","text-red-600","shadow","sm:w-auto", "dark:bg-white", "dark:text-green-500"])
                       .attr("href", "/about")
                       .text("Learn More")
                     }),

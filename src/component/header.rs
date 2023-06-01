@@ -11,7 +11,7 @@ pub fn render(app: Arc<App>) -> Dom {
           html!("div", {
             .class(["flex","h-16","items-center","justify-between"])
             .children([
-              logo::brand::render(),
+              logo::brand::render(app.clone()),
               component::nav::render(),
               component::theme::render(app),
             ])
