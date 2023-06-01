@@ -1,6 +1,6 @@
 # denominator template
 
-Pure rust SPA relying on fast, minimal signal lib +> rust-denominator
+Pure rust SPA relying on fast, minimal signal lib +> [rust-dominator](https://github.com/Pauan/rust-dominator)
 
 Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerplate), with:
 
@@ -8,7 +8,7 @@ Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerpla
 * enhanced version (with dark mod)
 * with bug fix (regarding routing)
 
-To know more about the core of the core lib read this:
+To know more about the core of [rust-dominator](https://github.com/Pauan/rust-dominator) read this:
 
 [tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
 
@@ -43,5 +43,5 @@ Then serve content in `./dist` with an http server
 
 ## Additional ressources
 
-- [core lib](https://github.com/Pauan/rust-dominator)
-- [credit template](https://github.com/dakom/dominator-tailwind-boilerplate)
+- [rust-dominator](https://github.com/Pauan/rust-dominator)
+- [dominator-tailwind-boilerplate(https://github.com/dakom/dominator-tailwind-boilerplate)
