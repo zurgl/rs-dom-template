@@ -46,4 +46,4 @@ pnpm dev
 pnpm dist
 ```
 
-Then serve content in `./dist` with an http server
+Then serve the content in `./dist` with a http server
