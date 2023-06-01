@@ -38,5 +38,5 @@ Then serve content in `./dist` with an http server
 
 ## Additional ressources
 
-- [core lib](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
+- [core lib](https://github.com/Pauan/rust-dominator)
 - [credit template](https://github.com/dakom/dominator-tailwind-boilerplate)
