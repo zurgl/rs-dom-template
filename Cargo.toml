@@ -23,7 +23,8 @@ futures-signals = "0.3.32"
 wasm-bindgen-futures = "0.4.34"
 js-sys = "0.3.61"
 futures = "0.3.15"
-
+strum = { version = "0.24", features = ["derive"] }
+strum_macros = "0.24"
 serde_json = "1.0.95"
 serde_derive = "1.0.126"
 

@@ -1,10 +1,15 @@
 use dominator::routing;
+use strum::{EnumIter, IntoEnumIterator};
+use strum_macros::{AsRefStr, Display};
 use web_sys::Url;
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter, Display, AsRefStr)]
 pub enum Route {
+    #[strum(to_string = "About")]
     About,
+    #[strum(to_string = "Home")]
     Home,
+    #[strum(to_string = "Contact")]
     Contact,
 }
 
@@ -19,6 +24,10 @@ impl Route {
         }
     }
 
+    pub fn not_home(&self) -> bool {
+        !matches!(self, Route::Home)
+    }
+
     #[allow(clippy::wrong_self_convention, dead_code)]
     pub fn to_url(&self) -> &'static str {
         match self {
@@ -27,14 +36,14 @@ impl Route {
             Route::Contact => "#/contact",
         }
     }
-
-    pub fn nav_iter() -> std::vec::IntoIter<(&'static str, Route)> {
-        vec![("About", Route::About), ("Contact", Route::Contact)].into_iter()
-    }
 }
 
 impl Default for Route {
     fn default() -> Self {
         Self::from_url(&routing::url().lock_ref())
     }
+}
+
+pub fn iter() -> RouteIter {
+    Route::iter()
 }

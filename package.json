@@ -7,7 +7,6 @@
     "build": "RUSTFLAGS=--cfg=web_sys_unstable_apis trunk build --release"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.0",
     "postcss": "^8.4.21",
