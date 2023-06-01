@@ -2,7 +2,7 @@
 
 Pure rust SPA relying on fast, minimal signal lib +> [rust-dominator](https://github.com/Pauan/rust-dominator)
 
-Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerplate), with:
+Based on [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
 
 * Simplification (less biolerplate)
 * Enhancement (with dark mod)
@@ -15,7 +15,7 @@ To know more about the core of [rust-dominator](https://github.com/Pauan/rust-do
 You will need to install trunk:
 
 ```sh
-cargo install --locked trun
+cargo install --locked trunk
 ```
 
 ## Features
@@ -27,22 +27,24 @@ cargo install --locked trun
 
 ## Instruction
 
+Easy way to install pnpm if you have a working nodejs
+
+```sh
+corepack enable
+corepack prepare pnpm@8.5.1 --activate
+```
+
 ### dev mode
 
 ```sh
-pn i
-pn dev
+pnpm i
+pnpm dev
 ```
 
 ### release mode
 
 ```sh
-pn dist
+pnpm dist
 ```
 
 Then serve content in `./dist` with an http server
-
-## Additional ressources
-
-- [rust-dominator](https://github.com/Pauan/rust-dominator)
-- [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate)
