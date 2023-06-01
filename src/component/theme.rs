@@ -1,7 +1,13 @@
 use std::sync::Arc;
 
-use crate::app::{App, Theme};
+use crate::app::App;
 use dominator::{clone, events, html, Dom};
+
+#[derive(Debug, Clone, Copy)]
+pub enum Theme {
+    Light,
+    Dark,
+}
 
 pub fn render(app: Arc<App>) -> Dom {
     html!("div", {

@@ -1,7 +1,7 @@
 pub mod pages;
 pub mod route;
 
-use crate::component;
+use crate::component::{self, theme::Theme};
 
 use dominator::{clone, html, routing, Dom};
 use futures_signals::signal::{Mutable, SignalExt};
@@ -9,12 +9,6 @@ use route::Route;
 use std::sync::Arc;
 use wasm_bindgen_futures::spawn_local;
 use web_sys::{window, HtmlElement};
-
-#[derive(Debug, Clone, Copy)]
-pub enum Theme {
-    Light,
-    Dark,
-}
 
 #[derive(Debug)]
 pub struct App {

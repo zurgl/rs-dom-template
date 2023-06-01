@@ -2,7 +2,7 @@ use dominator::{svg, Dom};
 use futures_signals::signal::SignalExt;
 use std::sync::Arc;
 
-use crate::app::{App, Theme};
+use crate::{app::App, component::theme::Theme};
 
 pub fn render(app: Arc<App>) -> Dom {
     svg!("svg", {
