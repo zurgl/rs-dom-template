@@ -45,4 +45,4 @@ Then serve content in `./dist` with an http server
 ## Additional ressources
 
 - [rust-dominator](https://github.com/Pauan/rust-dominator)
-- [dominator-tailwind-boilerplate(https://github.com/dakom/dominator-tailwind-boilerplate)
+- [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate)
