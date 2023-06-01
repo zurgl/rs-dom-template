@@ -3,7 +3,7 @@
 Pure rust SPA template relying on a fast and minimal signal lib:
 * [rust-dominator](https://github.com/Pauan/rust-dominator)
 
-This repo a minimal reproduction of [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
+This repo is a minimal reproduction of [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
 
 * Minimal approch (less biolerplate and example)
 * Add-on (with dark mode)
