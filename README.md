@@ -9,9 +9,7 @@ This repo a minimal reproduction of [dominator-tailwind-boilerplate](https://git
 * Add-on (with dark mode)
 * Improvement (regarding routing)
 
-To know more about the core of [rust-dominator](https://github.com/Pauan/rust-dominator) read this:
-
-[tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
+To know more about the core of [rust-dominator](https://github.com/Pauan/rust-dominator) read this [tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
 
 ## Features
 
