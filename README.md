@@ -1,7 +1,7 @@
 # denominator template
 
 Pure rust SPA relying on fast, minimal signal lib +> rust-denominator
-It's a simplified version with bug fix of a more exhaustive template see ressources at the bottom of the doc.
+It's a simplified and enhanced version with bug fix of a more exhaustive template see ressources at the bottom of the doc.
 
 To know more aboput teh core lib read this:
 
