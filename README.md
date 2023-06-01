@@ -1,4 +1,4 @@
-# denominator template
+# rust-dominator template
 
 Pure rust SPA template relying on a fast and minimal signal lib:
 * [rust-dominator](https://github.com/Pauan/rust-dominator)
