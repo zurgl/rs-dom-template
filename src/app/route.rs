@@ -27,7 +27,7 @@ impl Route {
             Route::Contact => "#/contact",
         }
     }
-    #[allow(dead_code)]
+
     pub fn nav_iter() -> std::vec::IntoIter<(&'static str, Route)> {
         vec![("About", Route::About), ("Contact", Route::Contact)].into_iter()
     }

@@ -2,7 +2,6 @@ use dominator::{html, Dom};
 
 pub fn render() -> Dom {
     html!("section", {
-      .class(["bg-gray-50", "dark:bg-gray-900"])
       .child(
         html!("div", {
           .class(["mx-auto","max-w-screen-xl","px-4","py-32","lg:flex","lg:h-screen","lg:items-center"])
