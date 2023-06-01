@@ -4,9 +4,9 @@ Pure rust SPA relying on fast, minimal signal lib +> [rust-dominator](https://gi
 
 Based on [credit template](https://github.com/dakom/dominator-tailwind-boilerplate), with:
 
-* simplification (less biolerplate)
-* enhanced version (with dark mod)
-* with bug fix (regarding routing)
+* Simplification (less biolerplate)
+* Enhancement (with dark mod)
+* Bug fix (regarding routing)
 
 To know more about the core of [rust-dominator](https://github.com/Pauan/rust-dominator) read this:
 
