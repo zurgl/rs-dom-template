@@ -43,7 +43,7 @@ pnpm dev
 ### release mode
 
 ```sh
-pnpm dist
+pnpm build
 ```
 
 Then serve the content in `./dist` with a http server
