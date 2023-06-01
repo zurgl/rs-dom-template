@@ -13,12 +13,6 @@ To know more about the core of [rust-dominator](https://github.com/Pauan/rust-do
 
 [tutorial](https://docs.rs/futures-signals/0.3.32/futures_signals/tutorial/index.html)
 
-You will need to install trunk:
-
-```sh
-cargo install --locked trunk
-```
-
 ## Features
 
 - tailwindcss
@@ -27,6 +21,12 @@ cargo install --locked trunk
 - layout
 
 ## Instruction
+
+You will need to install trunk:
+
+```sh
+cargo install --locked trunk
+```
 
 Easy way to install pnpm if you have a working nodejs
 
