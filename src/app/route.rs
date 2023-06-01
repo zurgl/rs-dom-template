@@ -1,40 +1,34 @@
 use dominator::routing;
-use strum::{EnumIter, IntoEnumIterator};
-use strum_macros::{AsRefStr, Display};
+use std::str::FromStr;
+use strum::{EnumIter, EnumString, IntoEnumIterator};
+use strum_macros::Display;
 use web_sys::Url;
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter, Display, AsRefStr)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter, Display, EnumString)]
 pub enum Route {
-    #[strum(to_string = "About")]
-    About,
-    #[strum(to_string = "Home")]
+    #[strum(serialize = "#/")]
     Home,
-    #[strum(to_string = "Contact")]
+    #[strum(serialize = "#/about")]
+    About,
+    #[strum(serialize = "#/contact")]
     Contact,
 }
 
 impl Route {
     pub fn from_url(url: &str) -> Self {
-        let url = Url::new(url).unwrap();
-        match url.hash().as_str() {
-            "#/" => Route::Home,
-            "#/about" => Route::About,
-            "#/contact" => Route::Contact,
-            _ => Route::Home,
-        }
+        let url = Url::new(url)
+            .map(|url| url.hash())
+            .unwrap_or(String::from("#/"));
+        Route::from_str(url.as_str()).ok().unwrap_or(Route::Home)
     }
 
     pub fn not_home(&self) -> bool {
         !matches!(self, Route::Home)
     }
 
-    #[allow(clippy::wrong_self_convention, dead_code)]
-    pub fn to_url(&self) -> &'static str {
-        match self {
-            Route::Home => "#/",
-            Route::About => "#/about",
-            Route::Contact => "#/contact",
-        }
+    pub fn as_text(&self) -> String {
+        let route = &self.to_string()[2..];
+        route[0..1].to_uppercase() + &route[1..]
     }
 }
 

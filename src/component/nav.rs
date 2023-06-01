@@ -13,9 +13,10 @@ pub fn render() -> Dom {
           .child(
             html!("ul", {
               .class(["flex","items-center","gap-6","text-xl", "font-bold"])
-              .children(app::route::iter().filter(Route::not_home).map(|route| {
-                nav_link::render(route, route.as_ref())
-              }))
+              .children(app::route::iter()
+                .filter(Route::not_home)
+                .map(nav_link::render)
+              )
             })
           )
         })

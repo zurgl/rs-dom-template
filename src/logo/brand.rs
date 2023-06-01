@@ -9,7 +9,7 @@ pub fn render(app: Arc<App>) -> Dom {
             .child(
               html!("a", {
                 .class(["block","text-red-700"])
-                .attr("href", "/#")
+                .attr("href", "#/")
                 .child(
                     svg!("svg", {
                         .class("h-8")
