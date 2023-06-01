@@ -10,7 +10,7 @@ use std::sync::Arc;
 use wasm_bindgen_futures::spawn_local;
 use web_sys::{window, HtmlElement};
 
-#[derive(Debug)]
+#[derive(Debug, Default)]
 pub struct App {
     pub route: Mutable<Route>,
     pub theme: Mutable<Theme>,
@@ -21,13 +21,6 @@ pub fn body() -> HtmlElement {
 }
 
 impl App {
-    pub fn new() -> Arc<Self> {
-        Arc::new(Self {
-            route: Mutable::new(Route::default()),
-            theme: Mutable::new(Theme::Light),
-        })
-    }
-
     pub fn render(app: Arc<Self>) -> Dom {
         let body = body();
 

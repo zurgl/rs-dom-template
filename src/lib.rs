@@ -2,6 +2,8 @@ mod app;
 mod component;
 mod logo;
 
+use std::sync::Arc;
+
 use app::App;
 use wasm_bindgen::prelude::*;
 
@@ -10,8 +12,7 @@ pub fn main_js() {
     init_logger();
     std::panic::set_hook(Box::new(on_panic));
 
-    let app = App::new();
-    dominator::append_dom(&dominator::body(), App::render(app));
+    dominator::append_dom(&dominator::body(), App::render(Arc::new(App::default())));
 }
 
 cfg_if::cfg_if! {

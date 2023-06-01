@@ -3,8 +3,9 @@ use std::sync::Arc;
 use crate::app::App;
 use dominator::{clone, events, html, Dom};
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Default)]
 pub enum Theme {
+    #[default]
     Light,
     Dark,
 }
