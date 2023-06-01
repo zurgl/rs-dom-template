@@ -1,12 +1,13 @@
 # denominator template
 
-Pure rust SPA relying on fast, minimal signal lib +> [rust-dominator](https://github.com/Pauan/rust-dominator)
+Pure rust SPA template relying on a fast and minimal signal lib:
+* [rust-dominator](https://github.com/Pauan/rust-dominator)
 
-Based on [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
+This repo a minimal reproduction of [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
 
-* Simplification (less biolerplate)
-* Enhancement (with dark mod)
-* Bug fix (regarding routing)
+* Minimal approch (less biolerplate and example)
+* Add-on (with dark mode)
+* Improvement (regarding routing)
 
 To know more about the core of [rust-dominator](https://github.com/Pauan/rust-dominator) read this:
 
