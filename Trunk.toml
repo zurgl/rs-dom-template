@@ -1,0 +1,9 @@
+[[hooks]]
+stage = "build"
+command = "sh"
+command_arguments = ["-c", "pnpm exec tailwindcss -i styles/main.css -o $TRUNK_STAGING_DIR/css/main.css"]
+
+[[hooks]]
+stage = "build"
+command = "sh"
+command_arguments = ["-c", "cp -rpv public $TRUNK_STAGING_DIR/"]
