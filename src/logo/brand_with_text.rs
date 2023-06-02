@@ -32,7 +32,7 @@ impl Letters {
             .map(|letter| {
                 svg!("path", {
                   .attr("d", &letter)
-                  .attr_signal("fill", super::update_fill_color(app.clone()))
+                  .attr_signal("fill", super::on_theme_update_color(app.clone()))
                 })
             })
             .collect::<Vec<Dom>>()
