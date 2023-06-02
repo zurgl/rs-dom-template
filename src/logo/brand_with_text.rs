@@ -1,9 +1,9 @@
 use dominator::{svg, Dom};
 use std::sync::Arc;
 
-use crate::{app::App, logo::update_fill_color};
+use crate::app::App;
 
-#[derive(Debug, serde::Deserialize, PartialEq, Eq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub struct Letters {
     letters: Vec<String>,
 }
@@ -32,7 +32,7 @@ impl Letters {
             .map(|letter| {
                 svg!("path", {
                   .attr("d", &letter)
-                  .attr_signal("fill", update_fill_color(app.clone()))
+                  .attr_signal("fill", super::update_fill_color(app.clone()))
                 })
             })
             .collect::<Vec<Dom>>()
