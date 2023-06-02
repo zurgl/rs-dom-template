@@ -1,6 +1,7 @@
 # rust-dominator template
 
 Pure rust SPA template relying on a fast and minimal signal lib:
+
 * [rust-dominator](https://github.com/Pauan/rust-dominator)
 
 This repo is a minimal reproduction of [dominator-tailwind-boilerplate](https://github.com/dakom/dominator-tailwind-boilerplate), with:
@@ -13,10 +14,10 @@ To know more about the core of [rust-dominator](https://github.com/Pauan/rust-do
 
 ## Features
 
-- tailwindcss
-- dark mode
-- routing
-- layout
+* tailwindcss
+* dark mode
+* routing
+* layout
 
 ## Instruction
 
