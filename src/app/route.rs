@@ -19,7 +19,7 @@ impl Route {
         let url = Url::new(url)
             .map(|url| url.hash())
             .unwrap_or(String::from("#/"));
-        Route::from_str(url.as_str()).ok().unwrap_or(Route::Home)
+        Route::from_str(&url).ok().unwrap_or(Route::Home)
     }
 
     pub fn not_home(&self) -> bool {
