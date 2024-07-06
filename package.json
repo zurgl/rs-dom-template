@@ -7,9 +7,9 @@
     "build": "RUSTFLAGS=--cfg=web_sys_unstable_apis trunk build --release"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.3.1"
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
   }
 }

@@ -31,7 +31,7 @@ Easy way to install pnpm if you have a working nodejs
 
 ```sh
 corepack enable
-corepack prepare pnpm@8.5.1 --activate
+corepack prepare pnpm@9.4.0 --activate
 ```
 
 ### dev mode
