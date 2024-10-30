@@ -48,3 +48,36 @@ pnpm build
 ```
 
 Then serve the content in `./dist` with a http server
+
+
+### Maintenance mode
+
+#### node maintenance
+
+Upgrade pnpm version
+```bash
+pnpm outdated
+```
+
+Check oudated `node_modules`
+```bash
+pnpm outdated
+```
+
+Updgrade `node module`
+```bash
+pnpm up --latest
+
+
+#### rust maintenance
+
+Check upgrade toolchain version
+```bash
+rustup upgrade
+```
+
+Set toolchain version
+```bash
+rustup set <toolchain>
+```
+
