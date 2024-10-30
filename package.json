@@ -4,7 +4,7 @@
   "license": "(MIT OR Apache-2.0)",
   "scripts": {
     "dev": "RUSTFLAGS=--cfg=web_sys_unstable_apis trunk serve --features dev --watch .",
-    "build": "RUSTFLAGS=--cfg=web_sys_unstable_apis trunk build --release"
+    "build": "trunk build --release"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
