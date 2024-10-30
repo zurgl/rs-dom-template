@@ -15,7 +15,7 @@ pub fn render() -> Dom {
                   .child(
                     html!("strong", {
                       .class(["font-extrabold","text-red-700", "dark:text-green-500","sm:block"])
-                      .text("Increase Conversion.")
+                      .text("Increase Transmission.")
                     })
                   )
                 }),
