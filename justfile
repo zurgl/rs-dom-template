@@ -3,7 +3,7 @@ prod:
 	cp -rpv ./dist /var/www/dom.elayar.fr
 
 clean:
-	rm -rf /var/www/dom.elayar.fr
 	cargo clean
+	rm -rf ./dist
 
 
