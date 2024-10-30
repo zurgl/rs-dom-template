@@ -28,7 +28,7 @@ cfg_if::cfg_if! {
   }
 }
 
-fn on_panic(info: &std::panic::PanicInfo) {
+fn on_panic(info: &std::panic::PanicHookInfo) {
     log::error!("panic: {:?}", info);
     web_sys::window()
         .unwrap()
