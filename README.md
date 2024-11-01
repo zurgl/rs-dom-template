@@ -56,7 +56,7 @@ Then serve the content in `./dist` with a http server
 
 Upgrade pnpm version
 ```bash
-pnpm outdated
+pnpm upgrade
 ```
 
 Check oudated `node_modules`
@@ -67,7 +67,7 @@ pnpm outdated
 Updgrade `node module`
 ```bash
 pnpm up --latest
-
+```
 
 #### rust maintenance
 
