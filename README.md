@@ -50,9 +50,9 @@ pnpm build
 Then serve the content in `./dist` with a http server
 
 
-### Maintenance mode
+## Maintenance mode
 
-#### node maintenance
+### node maintenance
 
 Upgrade pnpm version
 ```bash
@@ -69,7 +69,7 @@ Updgrade `node module`
 pnpm up --latest
 ```
 
-#### rust maintenance
+### rust maintenance
 
 Check upgrade toolchain version
 ```bash
